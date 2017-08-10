@@ -10,18 +10,18 @@
 
 **Comments clearify code for the programmer**
 ```go
-**//No Comment**
-**/* and No comment */**
+//No Comment
+/* and No comment */
 ```
 
 3)Our program began with package main.  what would the files in the fmt package begin with?
 ```go
-**package fmt**
+package fmt
 ```
 
 4)We used Println function defined in the fmt package.  If you wanted to use the Exit function from the os package, what would you need to do?
 ```go
-**import os**
+import os
 ```
 
 5)Modify the program we wrote so that instad of printing "Hello, World" it prints "Hello, my name is " followed by your name.
