@@ -1,4 +1,4 @@
-#Chapter 3 Exercises
+##Chapter 3 Exercises
 
 1) what are two ways to create a new variable?
 ```go
