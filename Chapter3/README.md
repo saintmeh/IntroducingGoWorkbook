@@ -28,16 +28,18 @@ if i> 10 {
 **}**
 
 3) Write a program that prints the numbers from 1 to 100 but for multiples of three, print "Fizz" instead of the number, and for multiples of five, print "Buzz"  For numbers that are multiples of both three and five, print "FizzBuzz"
-**for i := 1; i<=100; i++ {**
 
->  **if i%3 ==0 && i%5==0 {**
->>      **fmt.Println("FizzBuzz")**
->  **} else if i%3 == 0 {**
->>      **fmt.Println("Fizz")**
->    **} else if i%5 == 0 {**
->>      **fmt.Println("Buzz")**
->    **} else {**
->>      **fmt.Println(i)**
->    **}**  
-  
-**}**
+    for i := 1; i<=100; i++ {
+
+      //Warning: order of the conditions is important
+      if i%3 ==0 && i%5==0 {
+         fmt.Println("FizzBuzz")
+      } else if i%3 == 0 {
+         fmt.Println("Fizz")
+      } else if i%5 == 0 {
+         fmt.Println("Buzz")
+      } else {
+         fmt.Println(i)
+      }
+
+    }
