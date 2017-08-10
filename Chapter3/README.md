@@ -15,6 +15,6 @@ if i> 10 {
 
 **for i := 3; i<=100; i+=3 {**
 
-**  fmt.Println(i)**
+  **fmt.Println(i)**
   
 **}**
