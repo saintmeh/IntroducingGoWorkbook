@@ -13,7 +13,7 @@ if i> 10 {
 **Small**
 
 
-2) Write a program that prints out all the numbers between 1 and 100 that are evenly divisible by 3(i.e., 3, 5,9,etc)
+2) Write a program that prints out all the numbers between 1 and 100 that are evenly divisible by 3(i.e., 3, 15,9,etc)
 ```go
     //this can be done without an if statement...
     for i := 3; i<=100; i+=3 {
