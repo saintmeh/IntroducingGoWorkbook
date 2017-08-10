@@ -2,7 +2,7 @@
 
 1)What is whitespace?
 **whitespace is a necessary inclusion of tabs or spaces to maintain heirarchy within the code.  It also helps to keep code clean and readable.....**
-#####it's also a language...:P
+####it's also a language...:P
 
 2)What is a comment?  What are two ways of writing a comment?
 **Comments clearify code for the programmer**
