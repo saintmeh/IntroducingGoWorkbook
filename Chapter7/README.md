@@ -10,7 +10,7 @@
 
 3)  Add a new perimeter method to the shape interface to calculate the perimeter of a shape.  Implement the method for circle and rectangle.
 
-**Full code is in [chapt7Structs.go]**
+**Full code is in [chapt7Structs.go](./chapt7Structs.go)**
 ```go
 
 type Shape interface {
