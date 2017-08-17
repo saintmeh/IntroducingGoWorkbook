@@ -99,7 +99,7 @@ fmt.Println(ax[2:5])
     func min(listOfInts []int) int{ 
         //Preconditions
         if(len(listOfInts)<1) {
-            panic(fmt.Sprintf("Parameter must be a list with at least one element not %v", listOfInts) )
+            panic(fmt.Sprintf("Parameter must be a list of signed integers with at least one element not %v", listOfInts) )
         }
         //initialization
         const MaxInt = int(^uint(0) >> 1)
