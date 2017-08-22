@@ -2,7 +2,7 @@
 
 1)  Writing a good suite of tests is not always easy, but the process of writing tests often reveals more about a problem than you may first realize.  For example, with our **Average** function, what happens if you pass in an empty list([]float64{})?  How could the function be modified to return 0 in this case?
 
-**I did something like this [four chapters ago](../Chapter5/sliceExamples.go) with the "min" function(around line 180).  This precondition calls a panic instead of returning a valid result for invalid input.  It's better to fail as soon as an invalid value is discovered.  Otherwise we end up treating symptoms of symptoms of symptoms... ad naseum.  Having said that, I could have chose to "defer recover()" from the error and return a 0 float64 value.  This is acceptable, while still logging that there was cause for a potential future error.  I would normally suggest this as a compromise solution, but I wouldn't push.  Here is the code the book asked for:**
+**I did something like this [four chapters ago](../Chapter5/sliceExamples.go) with the "min" function(around line 100).  This precondition calls a panic instead of returning a valid result for invalid input.  It's better to fail as soon as an invalid value is discovered.  Otherwise we end up treating symptoms of symptoms of symptoms... ad naseum.  Having said that, I could have chose to "defer recover()" from the error and return a 0 float64 value.  This is acceptable, while still logging that there was cause for a potential future error.  I would normally suggest this as a compromise solution, but I wouldn't push.  Here is the code the book asked for:**
 ```go
  
 //averages a slice of floats
