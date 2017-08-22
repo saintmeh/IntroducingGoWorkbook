@@ -27,7 +27,7 @@ func Average(xs []float64) (r float64) {
 2)  Write a series of tests for the Min and Max functions you wrote in the previous chapter.
 ```go
 import (
-    "testing",
+    "testing"
     "math"
 )
 .
@@ -87,3 +87,9 @@ TestMax(t *testing.T) {
 }
     
 ```
+
+**meh2-pc@meh2-pc ~/testbed/go/IntroducingGoWorkbook/Chapter9/math $ go test**
+
+**PASS**
+
+**ok  /home/meh2-pc/testbed/go/IntroducingGoWorkbook/Chapter9/math	0.002s**
