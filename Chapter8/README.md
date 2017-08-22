@@ -58,3 +58,8 @@ func Min(numbers... float64) (minValue float64) {
 
 **run godoc command to spin up web server pointed to /my/directory/package**
 
+**Another way(for small scripts) is to just cat to std(or a webfile) out using -html flag and then pointing to the package**
+```
+godoc /home/meh2-pc/testbed/go/IntroducingGoWorkbook/Chapter8/math/ > /var/www/developmentServerReverseProxyA/html/docs/scriptA/math.htm
+```
+

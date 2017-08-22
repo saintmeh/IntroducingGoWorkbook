@@ -1,12 +1,17 @@
 package math
 
+import (
+    "math"
+    "fmt"
+)
+
 //averages a slice of floats
 func Average(xs []float64) (r float64) {
     total := float64(0)
     for _, x := range xs {
         total +=x
     }
-    r = total / len(xs)
+    r = total / float64(len(xs))
     return 
 }
 
