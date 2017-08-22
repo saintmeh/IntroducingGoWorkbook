@@ -39,7 +39,7 @@ type testPair struct {
     result float64
 }
 
-minTests := []testPair{
+var minTests = []testpair{
     {[]float64{2,4,6,8,10}, 2},
     {[]float64{2,4,-6,8,10}, -6},
     {[]float64{1,1,1,1,1}, 1},
@@ -49,7 +49,7 @@ minTests := []testPair{
     {[]float64{2,math.MaxFloat64,6,(-1) * math.MaxFloat64,10}, (-1) * math.MaxFloat64},
 }
 
-maxTests := []testPair{
+var maxTests = []testpair{
     {[]float64{2,4,6,8,10}, 10},
     {[]float64{-2,-4,-6,-8,-10}, -2},
     {[]float64{1,1,1,1,1}, 1},
@@ -60,32 +60,31 @@ maxTests := []testPair{
 }
 
 
-TestMin(t *testing.T) {
-    for _, testPair := range tests {
-        v := Min(testPair.values)
-        if (v != testPair.result){
+func TestMin(t *testing.T) {
+    for _, test := range minTests {
+        v := Min(test.values...)
+        if (v != test.result){
             t.Error(
-                "For", testPair.values,
+                "For", test.values,
                 "Got", v,
-                "Expected", testPair.result,
+                "Expected", test.result,
             )
         }
     }
 }
 
-TestMax(t *testing.T) {
-    for _, testPair := range tests {
-        v := Min(testPair.values)
-        if (v != testPair.result){
+func TestMax(t *testing.T) {
+    for _, test := range maxTests {
+        v := Max(test.values...)
+        if (v != test.result){
             t.Error(
-                "For", testPair.values,
+                "For", test.values,
                 "Got", v,
-                "Expected", testPair.result,
+                "Expected", test.result,
             )
         }
     }
 }
-    
 ```
 
 **meh2-pc@meh2-pc ~/testbed/go/IntroducingGoWorkbook/Chapter9/math $ go test**
